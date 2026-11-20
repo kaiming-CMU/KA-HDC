@@ -10,9 +10,9 @@ The manuscript is under review. During peer review, we are releasing selected co
 
 ## Framework
 
-[![KA-HDC framework showing the two graph encoders, cross-view kernel alignment, heat diffusion consensus, and diffusion-guided contrastive learning](figures/framework.png)](figures/framework.pdf)
+[![KA-HDC framework showing the two graph encoders, cross-view kernel alignment, heat diffusion consensus, and diffusion-guided contrastive learning](framework.png)]
 
-[View the full-resolution figure (PDF)](figures/framework.pdf)
+
 
 1. **Encode the two graph views.** The spatial graph connects spots within a chosen radius. The expression graph connects each spot to its nearest neighbors by cosine similarity. A separate graph convolutional network encodes each view, using gene expression as the input for both.
 2. **Align within-view similarities (panel A).** KA-HDC computes a Gaussian kernel over the spot embeddings in each view. An objective based on the Hilbert–Schmidt independence criterion (HSIC) encourages the two views to agree on which spots are similar.
